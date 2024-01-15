@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML文書のバージョンとエンコーディングを指定 -->
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<!-- Strutsの詳細設定 Strutsのルート要素で、全体の設定を囲むブロック-->
+<struts>
+   <constant name="struts.devMode" value="true" />
+   <!-- Strutsの開発モードを有効にします。開発モードでは、詳細なデバッグ情報が提供されるなど、開発中に役立つ機能が有効になります。 -->
+   <!-- 対象のpackageを設定-->
+   <package name="com.diworksdev.ecsite.action" extends="struts-default">
+   <!-- Strutsのアクションや結果などの設定が含まれるパッケージを定義します。extends="struts-default"は、デフォルトのStruts設定をこのパッケージに継承させることを示しています。 -->
+
+	<!--GoHomeAction-->
+	<!-- <action name="HomeAction" class="com.diworksdev.ecsite.action.GoHomeAction" method="execute">
+		<result name="success">home.jsp</result>
+	</action> -->
+
+    <!-- HomeAction --><!--
+    <action name="HomeAction" class="com.diworksdev.ecsite.action.HomeAction" method="execute">
+      <result name="login">login.jsp</result>
+      <result name="success">buyItem.jsp</result>
+    </action>
+
+    LoginAction
+    <action name="LoginAction" class="com.diworksdev.ecsite.action.LoginAction" method="execute">
+      <result name="success">buyItem.jsp</result>
+      <result name="error">login.jsp</result>
+    </action>
+
+    UserCreateAction
+    <action name="UserCreateAction" class="com.diworksdev.ecsite.action.UserCreateAction" method="execute">
+      <result name="success">userCreate.jsp</result>
+    </action>
+
+    UserCreateConfirmAction
+    <action name="UserCreateConfirmAction" class="com.diworksdev.ecsite.action.UserCreateConfirmAction" method="execute">
+      <result name="success">userCreateConfirm.jsp</result>
+      <result name="error">userCreate.jsp</result>
+    </action>
+
+    UserCreateCompleteAction
+    <action name="UserCreateCompleteAction" class="com.diworksdev.ecsite.action.UserCreateCompleteAction" method="execute">
+      <result name="success">userCreateComplete.jsp</result>
+    </action>
+
+    BuyItemAction
+    <action name="BuyItemAction" class="com.diworksdev.ecsite.action.BuyItemAction" method="execute">
+      <result name="success">buyItemConfirm.jsp</result>
+      <result name="error">buyItem.jsp</result>
+    </action>
+
+	BuyItemConfirmAction
+    <action name="BuyItemConfirmAction" class="com.diworksdev.ecsite.action.BuyItemConfirmAction" method="execute">
+      <result name="success">buyItemComplete.jsp</result>
+      <result name="error">buyItem.jsp</result>
+    </action>
+
+	MyPageAction
+    <action name="MyPageAction" class="com.diworksdev.ecsite.action.MyPageAction" method="execute">
+      <result name="success">myPage.jsp</result>
+     <result name="error">home.jsp</result>
+    </action>
+
+    LogoutAction
+	<action name="LogoutAction" class="com.diworksdev.ecsite.action.LogoutAction" method="execute">
+		<result name="success">home.jsp</result>
+    </action>
+ -->
+    <!-- <action>: アクションの定義を行います。nameはアクションの名前、classはそのアクションを処理するJavaクラスのフォルダー階層、methodは実行されるメソッドを指定します。 -->
+    <!-- resultアクションが成功した場合の結果を指定します。nameが "success" の場合、〜〜〜〜.jsp が表示されます。 -->
+
+  </package>
+</struts>
