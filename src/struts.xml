@@ -9,7 +9,10 @@
    <package name="com.diworksdev.ecsite.action" extends="struts-default">
    <!-- Strutsのアクションや結果などの設定が含まれるパッケージを定義します。extends="struts-default"は、デフォルトのStruts設定をこのパッケージに継承させることを示しています。 -->
 
-
+ <!--GoHomeAction-->
+	<action name="GoHomeAction" class="com.diworksdev.ecsite.action.GoHomeAction" method="execute">
+		<result name="success">home.jsp</result>
+		</action>
 
     <!-- HomeAction -->
     <action name="HomeAction" class="com.diworksdev.ecsite.action.HomeAction" method="execute">
@@ -21,6 +24,11 @@
     <action name="LoginAction" class="com.diworksdev.ecsite.action.LoginAction" method="execute">
       <result name="success">buyItem.jsp</result>
       <result name="error">login.jsp</result>
+    </action>
+
+    <!-- UserCreateAction -->
+    <action name="UserCreateAction" class="com.diworksdev.ecsite.action.UserCreateAction" method="execute">
+      <result name="success">userCreate.jsp</result>
     </action>
 
 
