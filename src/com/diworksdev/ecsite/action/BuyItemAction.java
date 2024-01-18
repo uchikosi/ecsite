@@ -14,14 +14,15 @@ public class BuyItemAction extends ActionSupport implements SessionAware {
 	public String execute() {
 
 		String result = SUCCESS;
+		// 購入個数をセッションに保存
+		session.put("count", count);
 		 // 購入個数を取得
 		int intCount = Integer.parseInt(session.get("count").toString());
 		// 値段を取得
 		int intPrice = Integer.parseInt(session.get("buyItem_price").toString());
-		// 購入個数をセッションに保存
-		session.put("count",count);
+
 		// 購入総額を計算してセッションに保存
-		session.put("buyItem_price", intCount * intPrice);
+		session.put("total_price", intCount * intPrice);
 		 // 支払い方法をセッションに保存
 		String payment;
 		if(pay.equals("1")) {
@@ -33,7 +34,7 @@ public class BuyItemAction extends ActionSupport implements SessionAware {
 		}
 		return result;
 	}
-	public void setStock(int count) {
+	public void setCount(int count) {
 		this.count = count;
 	}
 	public void setPay(String pay) {
