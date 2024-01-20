@@ -13,6 +13,7 @@ public class MyPageDAO {
 	private DBConnector dbConnector = new DBConnector();
 	private Connection connection = dbConnector.getConnection();
 
+//	データベースから購入履歴を取得するためのメソッド
 	public ArrayList<MyPageDTO> getMyPageUserInfo(String item_transaction_id, String user_master_id) throws SQLException{
 		ArrayList<MyPageDTO> myPageDTO = new ArrayList<MyPageDTO>();
 
@@ -44,6 +45,7 @@ public class MyPageDAO {
 		}
 		return myPageDTO;
 	}
+//	データベースから購入履歴を削除するためのメソッド
 	public int buyItemHistoryDelete(String item_transaction_id, String user_master_id) throws SQLException{
 		String sql ="DELETE FROM user_buy_item_transaction WHERE item_transaction_id= ? AND user_master_id = ?";
 				PreparedStatement preparedStatement;

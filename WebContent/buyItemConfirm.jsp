@@ -95,6 +95,7 @@
 				</tr>
 				<tr>
 					<td><input type="button" value="戻 る" onclick="submitAction('HomeAction')" /></td>
+					<!-- submitAction 関数が呼ばれ、引数として 'BuyItemConfirmAction' が渡されています。 -->
 					<td><input type="button" value="完 了" onclick="submitAction('BuyItemConfirmAction')" /></td>
 				</tr>
 			</table>

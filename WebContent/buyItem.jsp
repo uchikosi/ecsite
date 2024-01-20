@@ -65,6 +65,9 @@
 						<span>商品名</span>
 					</td>
 					<td>
+						<!-- Strutsフレームワークの一部であり、JSP（JavaServer Pages）で使用されるタグの一つです。このタグは、Javaオブジェクトや式の結果をHTMLに出力するために使用されます。
+						具体的には、オブジェクトのプロパティや式の結果を取得し、それをHTMLに埋め込んで表示する役割を果たします
+						session から buyItem_name というプロパティを取得し、その値をHTMLに出力します。-->
 						<s:property value="session.buyItem_name" />
 					</td>
 				</tr>
