@@ -29,9 +29,7 @@ public class BuyItemCompleteDAO {
 			preparedStatement.setString(1,item_transaction_id);
 			preparedStatement.setString(2,total_price);
 			preparedStatement.setString(3,total_count);
-
 			preparedStatement.setString(4,user_master_id);
-
 			preparedStatement.setString(5,pay);
 //			SQL 文の中の6番目のプレースホルダ (?) に、dateUtil.getDate() の戻り値をセットしています。
 //			dateUtil.getDate() は、日付を文字列として返すメソッド

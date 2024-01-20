@@ -21,7 +21,8 @@ public class BuyItemAction extends ActionSupport implements SessionAware {
 		// 値段を取得
 		int intPrice = Integer.parseInt(session.get("buyItem_price").toString());
 		// 購入総額を計算してセッションに保存
-		session.put("tostal_price", intCount * intPrice);
+		session.put("total_price", intCount * intPrice);
+
 		 // 支払い方法をセッションに保存
 		String payment;
 		if(pay.equals("1")) {
